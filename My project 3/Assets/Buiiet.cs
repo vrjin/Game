@@ -16,7 +16,7 @@ public class Buiiet : MonoBehaviour
     }
 
     // Update is called once per frame
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         Debug.Log("충돌 시작");
         if (other.tag == "Player")

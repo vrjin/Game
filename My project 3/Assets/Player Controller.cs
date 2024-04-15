@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
        */
         //수평축과 수직축의 입력값을 감지하여 저장
         float xlnput = Input.GetAxis("Horizontal");
-        float zlnput = Input.GetAxis("vertical");
+        float zlnput = Input.GetAxis("Vertical");
 
         float xSpeed = xlnput * speed;
         float zSpeed = zlnput * speed;
