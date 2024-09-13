@@ -34,10 +34,19 @@ public class Gun : MonoBehaviour
 
     private void Awake() {
         // 사용할 컴포넌트의 참조 가져오기
+        gunAudioPlayer = GetComponent<AudioSource>();
+        bulletLineRenderer = GetComponent<LineRenderer>();
+
+        bulletLineRenderer.positionCount = 2;
+
+        bulletLineRenderer.enabled = false;
     }
 
     private void OnEnable() {
         // 총 상태 초기화
+
+        ammoRemain = GunData.starAmmoRemain;
+        magAmmo = GunData.magCapacity;
     }
 
     // 발사 시도
