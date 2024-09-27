@@ -45,8 +45,8 @@ public class Gun : MonoBehaviour
     private void OnEnable() {
         // 총 상태 초기화
 
-        ammoRemain = GunData.starAmmoRemain;
-        magAmmo = GunData.magCapacity;
+        //ammoRemain = GunData.starAmmoRemain;
+       // magAmmo = GunData.magCapacity;
     }
 
     // 발사 시도

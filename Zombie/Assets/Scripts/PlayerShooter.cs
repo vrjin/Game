@@ -42,6 +42,10 @@ public class PlayerShooter : MonoBehaviour {
 
     // 애니메이터의 IK 갱신
     private void OnAnimatorIK(int layerIndex) {
-        
+
+        //총의 기준점 gunPivot을 3D 모델의 오른쪽 팔꿈치 위치로 이동
+       // gunPivot.position = PlayerAnimator.GetKHintPositon(AvatarIKghint.RightElbow);
+
+
     }
 }
